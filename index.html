@@ -12,31 +12,47 @@
     />
   </head>
   <body>
+    <div class="container">
     <header>
-      <button id="menu-button">Menu</button>
-
+      <div class="logo-container">
+        <img src="assets/logos/studiotext.png" alt="Text Logo" class="textlogo" />
+        <img src="assets/logos/logo.png" alt="Logo" class="logo" />
+      </div>
+      <div class="nav-logo-container hidden">
+        <img src="assets/logos/logo.png" alt="Logo" class="logo" />
+      </div>
+      <button id="menu-button"><img src="./assets/buttons/menu1.png" alt="menu"></button>
+      <div class="banner-text">
+        Transforming spaces with timeless design and expert craftsmanship.
+      </div>
     <nav class="nav-tab hidden">
       <ul class="nav-links">
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Our Team</a></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Projects</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Our Team</a></div></li>
         <li class="services">
-          <a href="#" id="services-toggle">Services</a>
+          <div class="nav-item"><span class="line"></span><a href="#" id="services-toggle">Services <img src="./assets/icons/plus.png" alt="plus"></a></div>
         </li>
-        <li><a href="#">Press & awards</a></li>
-        <li><a href="#">Journal</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Press & awards</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Journal</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Contact</a></div></li>
       </ul>
     </nav>
 
     <nav class="sub-navbar hidden">
-      <button id="back-button">Back</button>
+      <button id="back-button"><img src="./assets/buttons/backArrow.png" alt="backArrow"><img src="./assets/buttons/back.png" alt="back"></button>
       <ul class="sub-menu">
-        <li><a href="#">New construction & renovations</a></li>
-        <li><a href="#">Multi-Family developments</a></li>
-        <li><a href="#">Commercial & hospitality</a></li>
-        <li><a href="#">Furniture & decor</a></li>
-        <li><a href="#">Consultations</a></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">New construction & renovations</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Multi-Family developments</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Commercial & hospitality</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Furniture & decor</a></div></li>
+        <li><div class="nav-item"><span class="line"></span><a href="#">Consultations</a></div></li>
       </ul>
+      <div class="social-content">
+        <p>Extra content 1</p>
+        <p>Extra content 2</p>
+        <p>Extra content 3</p>
+        <p>Extra content 4</p>
+      </div>
     </nav>
     </header>
     <main>
@@ -71,6 +87,7 @@
       <p>Designed by Array</p>
       <p>Developed by Behbod Babai</p>
     </footer>
+  </div>
     <script type="module" src="scripts/main.js"></script>
   </body>
 </html>

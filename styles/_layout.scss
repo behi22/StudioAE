@@ -10,12 +10,6 @@
   background-color: #f4f4f4;
 }
 
-@include respond-to(tablet) {
-  .column {
-    flex: 1 1 50%;
-  }
-}
-
 @include respond-to(desktop) {
   .column {
     flex: 1 1 33%;
