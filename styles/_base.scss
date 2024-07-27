@@ -1,6 +1,21 @@
 body {
-  font-family: $font-stack;
-  color: $primary-color;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
 }
