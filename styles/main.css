@@ -127,14 +127,15 @@ header.menu-open::before {
 .nav-tab {
   color: #000000;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1057px;
-  display: none;
+  top: 25%;
+  left: 10%;
+  width: 70%;
+  height: 50%;
+  display: grid;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
   z-index: 9;
   transition: transform 0.3s ease;
 }
@@ -144,36 +145,93 @@ header.menu-open::before {
 }
 
 .nav-tab.visible {
-  display: flex; /* Show main nav bar */
+  display: grid; /* Show main nav bar */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: contents;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  position: relative;
+  font-family: Urbanist;
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 1.11px;
+}
+
+.touch.grid-item {
+  color: #757471;
+  font-size: 27px;
+}
+
+.services.grid-item:hover {
+  color: #9a7402;
+  transition: transform 1s ease;
+}
+
+.grid-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background-color: gray;
 }
 
 .sub-navbar {
   color: #000000;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1057px;
+  top: 25%;
+  left: 10%;
+  width: 70%;
+  height: 50%;
   display: none;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 10%;
+  grid-row-gap: 0;
   z-index: 10;
   transition: transform 0.3s ease;
 }
 
 .sub-navbar.visible {
-  display: flex; /* Show sub-navbar */
+  display: grid; /* Show sub-navbar */
+}
+
+.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: contents;
+}
+
+.sub-menu .grid-item {
+  font-size: 20px;
+  letter-spacing: 0.96px;
 }
 
 #back-button {
   background-color: transparent;
   border: none;
-  padding: 0;
+  font-size: 25px;
+  color: #757471;
   cursor: pointer;
-  position: absolute;
-  top: 40%;
-  right: 50%;
   z-index: 10;
 }
 
