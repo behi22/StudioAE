@@ -13,7 +13,31 @@
   </head>
   <body>
     <header>
-      <h1>StudioAE</h1>
+      <button id="menu-button">Menu</button>
+
+    <nav class="nav-tab hidden">
+      <ul class="nav-links">
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Our Team</a></li>
+        <li class="services">
+          <a href="#" id="services-toggle">Services</a>
+        </li>
+        <li><a href="#">Press & awards</a></li>
+        <li><a href="#">Journal</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sub-navbar hidden">
+      <button id="back-button">Back</button>
+      <ul class="sub-menu">
+        <li><a href="#">New construction & renovations</a></li>
+        <li><a href="#">Multi-Family developments</a></li>
+        <li><a href="#">Commercial & hospitality</a></li>
+        <li><a href="#">Furniture & decor</a></li>
+        <li><a href="#">Consultations</a></li>
+      </ul>
+    </nav>
     </header>
     <main>
       <div class="container">
@@ -24,7 +48,6 @@
           <p>Responsive Design Example</p>
         </div>
       </div>
-    </main>
     <footer>
       <p>
         This site is protected by reCAPTCHA and the Google
@@ -48,6 +71,6 @@
       <p>Designed by Array</p>
       <p>Developed by Behbod Babai</p>
     </footer>
-    <script src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
   </body>
 </html>
