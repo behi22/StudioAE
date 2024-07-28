@@ -3,6 +3,19 @@
   margin: 0 auto;
   padding: 0 5%;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+img {
+  -webkit-user-drag: none; /* For WebKit-based browsers (Chrome, Safari) */
+  user-drag: none; /* For other browsers that support it */
 }
 
 header {
@@ -332,6 +345,138 @@ main .container {
   left: 45%;
   width: 40%;
   height: 45%;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 5%;
+}
+
+.container2 .left-content,
+.container2 .right-content {
+  flex: 1;
+}
+
+.container2 .left-content {
+  text-align: left;
+}
+
+.container2 .right-content {
+  text-align: right;
+}
+
+.spaces {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 5%;
+  padding: 0 5%;
+  position: relative;
+}
+
+.spaces ul {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.spaces li {
+  position: relative;
+  flex: 0 0 600px;
+  margin-right: 1%;
+}
+
+.spaces li img {
+  width: 95%;
+  height: 80%;
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.spaces li:hover img {
+  filter: brightness(75%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 95%;
+  height: 80%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay-image {
+  max-width: 4%;
+  max-height: 4%;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.overlay-text {
+  margin-top: 10px;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 1.2;
+  padding-right: 3%;
+}
+
+.spaces li:hover .overlay {
+  opacity: 1;
+}
+
+.spaces-design {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.spaces-design h4 {
+  flex: 1;
+  text-align: left;
+}
+
+.hidden-button {
+  display: none;
+  flex: 1;
+  text-align: right;
+  margin-right: 5%;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 189%;
+}
+
+.hidden-button:hover {
+  text-decoration-color: rgb(138, 78, 0);
+}
+
+.spaces:hover .hidden-button {
+  display: block;
 }
 
 .body-line {
