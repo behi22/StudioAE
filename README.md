@@ -40,7 +40,7 @@ This webpage is developed to showcase knowledge of developing responsive and int
 
 ## Demo Video
 
-![alt text](demo.mp4)
+![alt text](Demo.mp4)
 
 ## Usage
 
@@ -61,6 +61,8 @@ Project is: Semi-Complete (Demo)
 - The menu needs more work, especially with the animations!
 
 - Most of the buttons do not have animations as there is currently no page developed for where they would lead to. The entire button layout needs to be changed as well as I used image files for some of the buttons, and need to find their respective hover images. Some of the animations for hovering images were changed to save time.
+
+- Hovering on one of the images in the spaces section brings up all of the "read more" buttons which is not optimal, but requires some time-consuimg HTML logic modifications.
 
 - Some of the main image files are out of focus and need to be adjusted.
 
