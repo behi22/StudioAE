@@ -40,7 +40,7 @@ This webpage is developed to showcase knowledge of developing responsive and int
 
 ## Demo Video
 
-![alt text](Demo.mp4)
+![alt text](demo.mp4)
 
 ## Usage
 
