@@ -1,0 +1,147 @@
+.container {
+  background-color: $background-color;
+  margin: 0 auto;
+  padding: 0 5%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.logo-container {
+  position: absolute;
+  top: 13%;
+  left: 3%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-container {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  display: none;
+  align-items: center;
+  z-index: 10;
+}
+
+.nav-logo-container.hidden {
+  display: none;
+}
+
+.nav-logo-container:not(.hidden) {
+  display: flex;
+}
+
+.textlogo {
+  margin: 0;
+  height: auto;
+}
+
+.logo {
+  margin-left: -75px;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 11%;
+  left: 7%;
+  color: #ffffff;
+  max-width: 60%;
+  text-align: left;
+  font-style: normal;
+  font-size: 55px;
+  font-family: Urbanist;
+  font-weight: 400;
+  line-height: 63px;
+  letter-spacing: 1.56px;
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background-color: gray;
+}
+
+.body-line {
+  width: 90%;
+  height: 1px;
+  background-color: gray;
+  margin: 0 auto;
+  display: block;
+}
+
+main .container {
+  font-family: Urbanist;
+  font-style: normal;
+  font-weight: 200;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: $theme-color;
+}
+
+.image-spacing {
+  margin-right: 30px;
+}
+
+.socials {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 189%;
+  color: gray;
+}
+
+.left-content,
+.right-content {
+  flex: 1;
+}
+
+/* Footer Top */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px 5%;
+}
+
+.footer-top .socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.footer-top .left-content {
+  text-align: left; /* Ensure left alignment for footer-top left content */
+}
+
+.footer-top .right-content {
+  text-align: right; /* Ensure right alignment for footer-top right content */
+}
+
+.footer-top .right-content .hours {
+  padding-right: 32%; /* Ensure left alignment for footer-top right hours label */
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 5%;
+  box-sizing: border-box;
+}
+
+.footer-bottom .left-content {
+  text-align: left; /* Left align for footer bottom left content */
+}
+
+.footer-bottom .right-content {
+  text-align: right; /* Right align for footer bottom right content */
+}
