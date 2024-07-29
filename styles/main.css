@@ -14,8 +14,7 @@ button {
 }
 
 img {
-  -webkit-user-drag: none; /* For WebKit-based browsers (Chrome, Safari) */
-  user-drag: none; /* For other browsers that support it */
+  -webkit-user-drag: none;
 }
 
 header {
@@ -254,10 +253,21 @@ body {
   overflow-x: hidden;
 }
 
+.body-line {
+  width: 90%;
+  height: 1px;
+  background-color: gray;
+  margin: 0 auto;
+  display: block;
+}
+
 main .container {
   font-family: Urbanist;
   font-style: normal;
   font-weight: 200;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: rgb(255, 251, 239);
 }
 
 main h3 {
@@ -278,10 +288,6 @@ main p {
   font-size: 21px;
   line-height: 159%;
   letter-spacing: 0.84px;
-}
-
-main .container {
-  background-color: rgb(255, 251, 239);
 }
 
 .container1 {
@@ -319,6 +325,8 @@ main .container {
 .container1 .right-item {
   text-align: right;
   position: relative;
+  padding: 0;
+  margin: 0;
 }
 
 .container1 .circle {
@@ -326,17 +334,17 @@ main .container {
   top: 50%;
   left: 33%;
   width: 35%;
-  height: 40%;
+  height: 35%;
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
 
 .container1 .squaresmall {
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 45%;
   width: 25%;
-  height: 30%;
+  height: 25%;
 }
 
 .container1 .squarelarge {
@@ -344,7 +352,7 @@ main .container {
   top: 50%;
   left: 45%;
   width: 40%;
-  height: 45%;
+  height: 40%;
 }
 
 .container2 {
@@ -380,6 +388,14 @@ main .container {
   margin-bottom: 5%;
   padding: 0 5%;
   position: relative;
+}
+
+.space-item img {
+  object-position: center;
+}
+
+.spaces.active {
+  cursor: grabbing;
 }
 
 .spaces ul {
@@ -428,6 +444,7 @@ main .container {
   max-height: 4%;
   margin-right: 10px;
   padding-top: 10px;
+  -webkit-user-drag: none;
 }
 
 .overlay-text {
@@ -485,7 +502,7 @@ main .container {
   align-items: flex-start;
   box-sizing: border-box;
   margin-bottom: 7%;
-  padding: 0 5%;
+  padding: 0 0 0 5%;
 }
 
 .journal ul {
@@ -512,6 +529,10 @@ main .container {
   padding: 0;
 }
 
+.journal img {
+  width: 100%;
+}
+
 .journal button {
   text-decoration: underline;
   text-underline-offset: 5px;
@@ -526,12 +547,41 @@ main .container {
   text-decoration-color: rgb(138, 78, 0);
 }
 
-.body-line {
-  width: 90%;
-  height: 1px;
-  background-color: gray;
-  margin: 0 auto;
-  display: block;
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5% 5% 0 5%;
+}
+
+.socialmedia .spaces {
+  flex: 1;
+  display: flex;
+  padding: 0;
+  margin: 0 0 5% 3%;
+}
+
+.socialmedia .spaces li {
+  flex: 0 0 auto;
+  height: 75%;
+  list-style: none;
+  margin: 0 0;
+}
+
+.socialmedia .spaces li img {
+  max-width: 400px;
+  max-height: 400px;
+  -webkit-user-drag: none;
+}
+
+.container3 {
+  width: 20%;
+}
+
+.container3 img {
+  width: 100%;
 }
 
 footer {
@@ -603,7 +653,6 @@ footer a {
   padding-right: 32%; /* Ensure left alignment for footer-top right hours label */
 }
 
-/* Footer Bottom */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
