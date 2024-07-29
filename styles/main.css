@@ -119,10 +119,8 @@ header.menu-open::before {
   bottom: 11%;
   left: 7%;
   color: #ffffff;
-  font-size: 70px;
   max-width: 60%;
   text-align: left;
-  font-family: Urbanist;
   font-style: normal;
   font-size: 55px;
   font-family: Urbanist;
@@ -259,19 +257,21 @@ body {
 main .container {
   font-family: Urbanist;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 main h3 {
   font-size: 45px;
   line-height: 63px;
   letter-spacing: 1.56px;
+  font-weight: 300;
 }
 
 main h4 {
-  font-size: 30px;
+  font-size: 32px;
   line-height: 49px;
   letter-spacing: 1.11px;
+  font-weight: 300;
 }
 
 main p {
@@ -477,6 +477,53 @@ main .container {
 
 .spaces:hover .hidden-button {
   display: block;
+}
+
+.journal {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-bottom: 7%;
+  padding: 0 5%;
+}
+
+.journal ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.journal li {
+  font-family: Urbanist;
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 189%;
+  width: 23%;
+  box-sizing: border-box;
+  margin: 0 12% 0 0;
+}
+
+.journal h4,
+.journal p {
+  margin: 0 0 7% 0;
+  padding: 0;
+}
+
+.journal button {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 189%;
+}
+
+.journal button:hover {
+  text-decoration-color: rgb(138, 78, 0);
 }
 
 .body-line {
